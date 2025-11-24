@@ -121,7 +121,7 @@ export default function RegisterScreenInner() {
         songArtist: payload.songArtist,
         songLink: payload.songLink ?? "",
       };
-      const updated = await updatePerson(guestId, patch);
+      await updatePerson(guestId, patch);
       setGuestsState((prev) =>
         prev.map((g) => (g.id === guestId ? { ...g, ...patch } : g))
       );
@@ -160,7 +160,7 @@ export default function RegisterScreenInner() {
                 const patch: any = {};
                 if (t === "wedding") patch.assistWedding = true;
                 else patch.assistCeremony = true;
-                const updated = await updatePerson(id, patch);
+                await updatePerson(id, patch);
                 setGuestsState((prev) =>
                   prev.map((g) => (g.id === id ? { ...g, ...patch } : g))
                 );
@@ -179,7 +179,7 @@ export default function RegisterScreenInner() {
                 const patch: any = {};
                 if (t === "wedding") patch.assistWedding = true;
                 else patch.assistCeremony = true;
-                const updated = await updatePerson(id, patch);
+                await updatePerson(id, patch);
                 setGuestsState((prev) =>
                   prev.map((g) => (g.id === id ? { ...g, ...patch } : g))
                 );
