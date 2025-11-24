@@ -1,4 +1,3 @@
-import React from "react";
 import type { Guest } from "../screens/Register";
 
 export default function GuestsSection({

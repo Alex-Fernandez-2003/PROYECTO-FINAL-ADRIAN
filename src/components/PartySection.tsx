@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Modal from "./Modal";
 import Card from "./Card";
 import type { Guest } from "../screens/Register";
 
 export default function PartySection({
-  onSuggestSong,
-  suggestions,
   guests,
   onSaveSong,
 }: {

@@ -1,4 +1,3 @@
-import React from "react";
 import bgSrc from "../assets/Weeding.jpg";
 
 export default function Hero() {
