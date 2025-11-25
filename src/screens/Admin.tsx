@@ -24,7 +24,9 @@ export default function Admin() {
   const [songsOpen, setSongsOpen] = useState(false);
 
   const [selected, setSelected] = useState<Record<string, boolean>>({});
-  const [baseUrl, setBaseUrl] = useState("http://localhost:5173/register");
+  const [baseUrl, setBaseUrl] = useState(
+    "https://proyecto-final-adrian.vercel.app/#/register"
+  );
   const [generatedLink, setGeneratedLink] = useState<string | null>(null);
 
   useEffect(() => {
